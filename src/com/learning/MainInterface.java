@@ -18,6 +18,13 @@ public class MainInterface {
         IMovable m1;
         m1 = car1;
 
+        // לא ניתן לייצר אובייקטים מממשק
+        // IMovable m = new IMovable(); // שגיאת קומפילציה
+
+        IMovable m2 = new Car("Tesla", 2023);
+        IMovable m3 = new Person(50, "Eilon");
+        ((Person) m3).getName();
+
         m1.move();
 
         car1.fillGas();
@@ -31,6 +38,15 @@ public class MainInterface {
         if (car1 instanceof IMovable) {
             System.out.println("Car is implements IMovable");
         }
+
+        IMovable m5 = (IMovable) car1;
+
+        /*
+        Point p = new Point(10, 20);
+        Employee e = new Employee("test", 1000);
+        IMovable m6 = (IMovable)p;
+        IMovable m7 = (IMovable)e;
+        */
 
         // ניתן ליצור מערך מסוג ממשק
         // לתוך המערך נוכל להכניס אך ורק אובייקטים שמממשים את הממשק
