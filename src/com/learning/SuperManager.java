@@ -1,7 +1,7 @@
 package com.learning;
 
 // ניתן להגדיר מחלקה כ final ואז לא ניתן לרשת אותה יותר
-public class SuperManager extends Manager {
+public final class SuperManager extends Manager {
     public void test() {
 
     }
@@ -15,4 +15,12 @@ public class SuperManager extends Manager {
     public String toString() {
         return "SuperManager - " + super.toString();
     }
+
+    /*
+    // לא ניתן לדרוס פעולה שהוגדרה כ final
+    // שגיאת קומפילציה
+    public void manage() {
+        System.out.println("I am super managing now...");
+    }
+    */
 }
