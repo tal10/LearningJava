@@ -3,7 +3,7 @@ package com.learning;
 import java.util.Objects;
 
 // הגדרת מחלקה
-public class Person {
+public class Person implements IMovable {
     // תכונות - משתנים
     // ברגע שנוצר אובייקט, אוטומטית נוצרים כל משתני המחלקה פר האובייקט, וכל אחד מהם מקבל את הערך הדיפולטי בהתאם לסוג המשתנה שלו
     private int age;
@@ -89,6 +89,10 @@ public class Person {
 
     public static int getNumOfPersons() {
         return NUM_OF_PERSONS;
+    }
+
+    public void move() {
+        System.out.println("I am a person and I am moving with my two legs");
     }
 }
 

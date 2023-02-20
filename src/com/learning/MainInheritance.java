@@ -1,5 +1,9 @@
 package com.learning;
 
+import com.learning.tirgul.A;
+import com.learning.tirgul.B;
+import com.learning.tirgul.C;
+
 public class MainInheritance {
     public static void printTheEmployee(Employee emp) {
         emp.print();
@@ -210,12 +214,5 @@ public class MainInheritance {
         printTheEmployee(empForFun4);
         printTheEmployee(empForFun5);
         printTheEmployee(empForFun6);
-
-        // -----------------------------------------
-        A y1 = new B(10);
-        B y2 = new B(10);
-        A z1 = new C(10);
-        C z2 = new C(10);
-        System.out.println(y1.f(y2));
     }
 }
