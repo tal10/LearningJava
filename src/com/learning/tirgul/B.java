@@ -1,4 +1,4 @@
-package com.learning;
+package com.learning.tirgul;
 
 public class B extends A {
     public B(int n) {
