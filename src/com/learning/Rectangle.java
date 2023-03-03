@@ -4,6 +4,10 @@ public class Rectangle {
     private Point upperLeft;
     private Point buttomRight;
 
+    public Rectangle() {
+
+    }
+
     public Rectangle(Point upperLeft, Point buttomRight) {
         this.upperLeft = upperLeft;
         this.buttomRight = buttomRight;

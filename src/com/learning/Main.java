@@ -13,6 +13,13 @@ public class Main {
         boolean b = true;
         b = false;
 
+        int[] array = new int[3];
+        array[0] = 10;
+        array[1] = 20;
+        array[2] = 30;
+
+        int[] array2 = {10, 20, 30};
+
         // הגדרת משתנה כקבוע, לא ניתן לשנות ערכו לאחר ההשמה הראשונית
         final int finalNum = 20;
         // finalNum = 30; // שגיאת קומפילציה
@@ -65,6 +72,8 @@ public class Main {
         Point pnt1 = new Point(10, 20);
         Point pnt2 = new Point(100, 200);
         Rectangle r1 = new Rectangle(pnt1, pnt2);
+
+        Rectangle r2 = new Rectangle();
 
         System.out.println("--------------------------");
         System.out.println(r1);

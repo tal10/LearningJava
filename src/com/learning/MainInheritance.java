@@ -73,6 +73,13 @@ public class MainInheritance {
         Manager temp = (Manager) m11;
         temp.manage();
 
+        Employee ee1 = (Employee)m10;
+        Object oo1 = (Object)m10;
+
+
+        Employee ee2 = (Employee)new Manager("Danny 1", 20000, "R&D");
+        Employee mm1 = (Manager)new Employee("Benni", 6000);
+
 
         // ((Rectangle)m11).getButtomRight();        - לא אפשרי - שגיאת קומפילציה
         // ((SuperManager)m11).test();               - אפשרי - אך נקבל שגיאת זמן ריצה
