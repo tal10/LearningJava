@@ -9,6 +9,13 @@ public class Point {
         this.y = y;
     }
 
+    // פעולה בונה מעתיקה
+    // copy constructor
+    public Point(Point other) {
+        this.x = other.x;
+        this.y = other.y;
+    }
+
     public int getX() {
         return x;
     }
